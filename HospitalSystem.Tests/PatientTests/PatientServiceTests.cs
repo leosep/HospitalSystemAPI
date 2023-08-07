@@ -24,7 +24,7 @@ namespace HospitalSystem.Tests.PatientTests
             return new PaginatedResult<Patient>(patients, 2, 1, 1);
         }
 
-        // Mock patient service
+        // Mock patient repository
         private Mock<IPatientRepository> CreateMockPatientRepository(List<Patient> patients)
         {
             var newPatient = new Patient { Name = "Name 3", Address = "Address 3", PhoneNumber = "+1 (333) 333-3333" };
